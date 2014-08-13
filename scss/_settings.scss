@@ -43,7 +43,7 @@ $include-html-global-classes: $include-html-classes;
 // $font-weight-bold: bold !default;
 
 // We use these to control various global styles
-// $body-bg: #fff;
+$body-bg: #69AD95;
 // $body-font-color: #222;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 $font-weight-normal:normal;
@@ -126,7 +126,7 @@ $secondary-color: #73B2AF;
 // $header-font-family: $body-font-family;
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
-// $header-font-color: #222;
+$header-font-color: #FFF;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
@@ -834,9 +834,9 @@ $magellan-padding: 0 !important;
 // $include-html-panel-classes: $include-html-classes;
 
 // We use these to control the background and border styles
-// $panel-bg: scale-color(#fff, $lightness: -5%);
+$panel-bg: scale-color(#FF9B71, $lightness: -5%);
 // $panel-border-style: solid;
-// $panel-border-size: 1px;
+$panel-border-size: .5px;
 
 // We use this % to control how much we darken things on hover
 // $panel-function-factor: -11%;
@@ -1209,7 +1209,7 @@ $sub-nav-active-cursor: default;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: #333;
+$topbar-bg-color: #B1FFDE;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
@@ -1275,8 +1275,8 @@ $sub-nav-active-cursor: default;
 // $topbar-divider-border-top: solid 1px scale-color($topbar-bg-color, $lightness: -50%);
 
 // Sticky Class
-// $topbar-sticky-class: ".sticky";
-// $topbar-arrows: true; //Set false to remove the triangle icon from the menu item
+$topbar-sticky-class: ".sticky";
+$topbar-arrows: true; //Set false to remove the triangle icon from the menu item
 
 // ICON BAR
 
