@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ryan Van Do</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
+    <link rel="stylesheet" href="stylesheets/main.css" />
     <link rel="stylesheet" href="img/font-awesome/css/font-awesome.min.css">
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
@@ -12,7 +13,7 @@
     <div class="row">
       <div class="large-12 columns">
         <h1>Ryan Do</h1>
-        <h5 class="subheader">development & design</h5>
+        <h5 class="subheader">design & development</h5>
 
       </div>
 
@@ -20,43 +21,112 @@
     
     <div class="row">
 
-        <!-- sticky nav -->
-        <div class="sticky">
-          <nav class="top-bar" data-topbar>
-               
-          </nav>
-        </div>
+  <div class="sticky">
+      <nav class="top-bar" data-topbar>
+      <ul class="title-area">
+        <li class="name">
+        
+        </li>
+         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
+
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">    
+              <li><a href="http://github.com/rvd3"><i class="fa fa-github fa-2x"></i></a></li>
+              <li><a href="http://instagram.com/ryando"><i class="fa fa-camera-retro fa-2x"></i></a></li>
+              <li><a href="http://twitter.com/ryanvando"><i class="fa fa-twitter fa-2x"></i></a></li>
+              <li><a href="http://reddit.com"><i class="fa fa-reddit fa-2x"></i></a></li>
+        </ul>
+
+        <!-- Left Nav Section -->
+        <ul class="left">
+          <li><a href="#"><i class="fa fa-terminal fa-2x"></a></i></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </section>
+    </nav>
+  </div>
       
       <div class="large-12 columns">
         <div class="panel">
-          <h3>Portfolio</h3><br><br>
-          <div class="row" data-equalizer>
+          <div class="row" data-equalizer id="portfolio">
+            <div class="large-6 columns panel" data-equalizer-watch><center>
+              <h3 class="subheader">Web</h3>
+              <i class="fa fa-desktop fa-4x"></i><br><br>
+
+              <!-- Web gallery -->
+                 <div id="thumbs">
+                  <a href="#portfolio"><img src="img/websites/travvvle.png" alt="Joe" data-caption="Landing page of fictional mobile platform for Dribbble"></a>
+                  <a href="#portfolio"><img src="img/websites/butterandsalmon.png" alt="Pong" data-caption="Art and music gallery site with a mobile-focused design for artist(s) Butter & Salmon"></a>
+      
+                  <a href="#portfolio"><img src="images/photo3.jpg" alt="Pong" data-caption="caption3"></a>
+                  <a href="#portfolio"><img src="images/photo4.jpg" alt="" data-caption="caption4"></a>
+                  <a href="#portfolio"><img src="images/photo5.jpg" alt="" data-caption="caption5"></a>
+                  <a href="#portfolio"><img src="images/photo6.jpg" alt="" data-caption="caption6"></a>
+              </div>
+
+              <!-- Web gallery "display" -->
+              <div id="fullsize">
+                  <a href="#"><img src="images/websites/travvvle.png" alt=""></a> 
+                  <a href="#"><p>Here be websites</p></a>
+                  <!--   how to swap out site links?  -->
+              </div>
+            </center>
+          </div>
             <div class="large-6 columns panel" data-equalizer-watch>
-              <i class="fa fa-desktop fa-3x"></i>
-            
-            </div>
-            <div class="large-6 columns panel" data-equalizer-watch>
-              
-                <i class="fa fa-film fa-3x"></i>
+                <center><h3 class="subheader">Video</h3>
+                  <i class="fa fa-film fa-4x"></i></center><br>
                 <div class="flex-video"><br>
                   <iframe src="http://player.vimeo.com/video/87412031?byline=0&amp;portrait=0" width="720" height="405" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/87412031">Demo Reel 2014</a> from <a href="http://vimeo.com/ryando">Ryan Van Do</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
                 </div>
+                <br><br>
+            
             </div>
           </div>
 
 
 
-          <div class="row">
+          <div class="row" id="about">
 
+            <div style="length:100%; height:2px; background-color:#B1FFDE"></div><br><br>
+
+            <center><h3 class="subheader">Stages of site design</h3><br>
+              <!-- Design process -->
+                 <div id="thumbs2">
+                  <a href="#process"><img src="img/websites/rvd1.png" alt="Joe" data-caption="1 - Foundation template"></a>
+                  <a href="#process"><img src="img/websites/rvd2.png" alt="Joe" data-caption="2 - Foundation stripped down and restructured"></a>
+                  <a href="#process"><img src="img/websites/rvd3.png" alt="Joe" data-caption="3 - Color palette made with Adobe Kuler"></a>
+                  <a href="#process"><img src="img/websites/rvd5.png" alt="Joe" data-caption="4 - Color palette applied"></a>
+                  <a href="#process"><img src="img/websites/rvd6.png" alt="Joe" data-caption="5 - Almost-final design"></a>
+              </div><br>
+
+              <!-- Design process display -->
+              <div id="fullsize2">
+                <a href="#process"><img src="img/websites/rvd1.png" alt="Joe" data-caption="1 - Foundation template"></a>
+                  <a href="#"><p>Built on Foundation 5</p></a></center>
+                  
+              </div>
+            </center>
+
+            <!--<h3>About</h3>
             <div class="large-4 medium-4 columns">
-              
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.  
             </div>
             <div class="large-4 medium-4 columns">
-              
+              Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
             </div>
             <div class="large-4 medium-4 columns">
-              
-            </div>        
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div> 
+            -->       
           </div>
         </div>
       </div>
@@ -65,26 +135,37 @@
 
     <div class="row">
       <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
+        
         <!-- Grid Example -->
 
         <div class="row">
           <div class="large-12 columns">
-            <div class="callout panel">
-              <i class="fa fa-camera-retro fa-3x"></i>
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
+            <div class="callout panel"><center>
+              <h3 class="subheader">About</h3>
+              <p>Suddenly, I was born... next thing I knew lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p>Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur.</p>
+               <br><br><div style="length:75%; height:2px; background-color:#FF9B71"></div><br><br>
+              <br><br><i class="fa fa-camera-retro fa-3x"></i></center><br>
+              <!-- SnapWidget -->
+              <center><iframe src="http://snapwidget.com/sc/?u=cnlhbmRvfGlufDMwMHwzfDN8fG5vfDV8bm9uZXxvblN0YXJ0fHllcw==&v=15714" title="Instagram Widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:500px; height:300px"></iframe></center>
+
+
             </div>
           </div>
         </div>
         <div class="row">
           <div class="large-6 medium-6 columns">
             <div class="callout panel">
-              <p>post-indie-vegan-chillstep</p>
+              <p>crowdsourced-indie-vegan-chillstep</p>
             </div>
           </div>
           <div class="large-6 medium-6 columns">
             <div class="callout panel">
-              <p>former-contemporary-retrofuture-modernism</p>
+              <p>post-former-contemporary-retrofuture-modernism</p>
             </div>
           </div>
         </div>
@@ -108,79 +189,41 @@
         
         <hr />
                 
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="small-9 columns">
-                  <input type="text" placeholder="small-9.columns" />
-                </div>
-                <div class="small-3 columns">
-                  <span class="postfix">.com</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
+       
       </div>     
 
       <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
+        
+       <!-- <a href="#" class="small radius button">Radius Button</a><br/>
         <a href="#" class="small round button">Round Button</a><br/>            
-        <a href="#" class="medium success button">Success Btn</a><br/>
         <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-        <div class="panel">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
+        <a href="#" class="medium secondary button">Secondary Btn</a></p> -->          
+        <div class="panel"><center>
+                 <h5>Contact</h5></center><br>
+        <form id="contact">
+          <div class="row">
+          </div>
+          <div class="row">
+            <div class="large-4 medium-4 columns">
+              <label></label>
+              <input type="text" placeholder="Name"/>
+            </div>
+            <div class="large-8 medium-8 columns">
+              <label></label>
+              <input type="text" placeholder="Email" />
+            </div>
+            <div class="large-4 medium-4 columns">
+             
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <label></label>
+              <textarea placeholder="Message"></textarea>
+               <center><br><a href="#" class="medium alert button" type="submit">Submit</a></center>
+            </div>
+          </div>
+        </form>
         </div>
       </div>
     </div>
@@ -191,5 +234,7 @@
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation/foundation.js"></script>
     <script src="js/foundation/foundation.magellan.js"></script>
+
+
   </body>
 </html>
